@@ -12,6 +12,7 @@ def graph1(df):
     print(table_chart)
 
 
+# Grades in different subjects based on Gender
 def graph2(df):
     math_df = df[['gender', 'math grade']]
 
@@ -49,6 +50,7 @@ def graph2(df):
     plt.savefig('../result/grades_based_on_genders.png', format='png', dpi=300)
 
 
+# Grades in different subjects based on Education Level of Parents
 def graph3(df):
     math_df = df[['parental level of education', 'math grade']]
 
@@ -86,6 +88,7 @@ def graph3(df):
     plt.savefig('../result/grades_based_on_parental_level_of_education.png', format='png', dpi=300)
 
 
+# Distribution of lunch types
 def graph4(df):
     lunch_counts = df['lunch'].value_counts()
     plt.figure(figsize=(8, 6))
@@ -94,6 +97,7 @@ def graph4(df):
     plt.savefig('../result/pie_chart_of_lunch_types.png', format='png', dpi=300)
 
 
+# Reading vs Writing Scores
 def graph5(df):
     plt.figure(figsize=(8, 6))
     sns.scatterplot(x='reading score', y='writing score', data=df, hue='gender', palette='Set1', alpha=0.7)

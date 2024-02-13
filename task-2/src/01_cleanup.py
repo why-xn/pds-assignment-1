@@ -34,6 +34,7 @@ def cleanup():
     reading_grade = []
     writing_grade = []
 
+    # generating grades of the subjects based on the score
     for index, row in df.iterrows():
         math_grade.append(find_grade(df.at[index, 'math score']))
         reading_grade.append(find_grade(df.at[index, 'reading score']))
