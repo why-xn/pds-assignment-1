@@ -46,7 +46,7 @@ def graph2(df):
     axes[2].legend(title='Grades')
 
     plt.tight_layout()
-    plt.savefig('grades_based_on_genders.png', format='png', dpi=300)
+    plt.savefig('../result/grades_based_on_genders.png', format='png', dpi=300)
 
 
 def graph3(df):
@@ -83,7 +83,7 @@ def graph3(df):
     axes[2].legend(title='Grades')
 
     plt.tight_layout()
-    plt.savefig('grades_based_on_parental_level_of_education.png', format='png', dpi=300)
+    plt.savefig('../result/grades_based_on_parental_level_of_education.png', format='png', dpi=300)
 
 
 def graph4(df):
@@ -91,7 +91,7 @@ def graph4(df):
     plt.figure(figsize=(8, 6))
     plt.pie(lunch_counts, labels=lunch_counts.index, autopct='%1.1f%%', colors=['green', 'red'])
     plt.title('Pie Chart of Lunch Types')
-    plt.savefig('pie_chart_of_lunch_types.png', format='png', dpi=300)
+    plt.savefig('../result/pie_chart_of_lunch_types.png', format='png', dpi=300)
 
 
 def graph5(df):
@@ -102,7 +102,7 @@ def graph5(df):
     plt.title('Scatter Plot of Reading vs. Writing Scores')
     plt.grid(True)
     plt.legend(title='Gender')
-    plt.savefig('scatter_plot_of_reading_vs_writing.png', format='png', dpi=300)
+    plt.savefig('../result/scatter_plot_of_reading_vs_writing.png', format='png', dpi=300)
 
 
 def analysis():
